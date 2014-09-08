@@ -33,18 +33,13 @@ m = max(s);
 
 s1 = s + m;
 
-fator = 255 / m;
+fator = 255 / (m * 2);
 
-s2 = round(s1 * fator);
+s2 = s1 * fator;
 
-// Save in the file
-fid = mopen('input-signal.dat', 'w');
+fprintfMat("tmp.dat", s2, "%3.0f")
 
-for i = N
-    mfprintf(fid, "%d", s[i]);
-end
-
-mclose(fid);
+unix_g('sed -e ''s/\s\+/\n/g'' tmp.dat > input-signal.dat')
 
 
 
