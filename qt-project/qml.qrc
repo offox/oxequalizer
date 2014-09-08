@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/slider-handle.jpg</file>
+        <file>OxSlider.qml</file>
+        <file>images/slider-panel.jpg</file>
+        <file>OxBarGraph.qml</file>
+        <file>OxVu.qml</file>
+        <file>OxMixer.qml</file>
+        <file>images/play.png</file>
+        <file>images/stop.png</file>
+        <file>images/pause.png</file>
+    </qresource>
+</RCC>
