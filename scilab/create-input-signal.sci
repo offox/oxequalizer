@@ -6,10 +6,10 @@
 //
 
 // Number of samples
-N = 48000
+N = 65536
 
 // Sample rate
-sampleRate = 48000 
+sampleRate = 65536
 
 // Samples
 n = [0: N];
@@ -37,9 +37,11 @@ fator = 255 / (m * 2);
 
 s2 = s1 * fator;
 
-fprintfMat("tmp.dat", s2, "%3.0f")
+fprintfMat("tmp.dat", s1, "%f")
 
-unix_g('sed -e ''s/\s\+/\n/g'' tmp.dat > input-signal.dat')
+unix_g('sed -e ''s/\s\+/\n/g'' tmp.dat > tmp2.dat')
+unix_g('sed -e ''s/\./,/g'' tmp2.dat > tmp3.dat')
+unix_g('head -n -2 tmp3.dat > input-signal.dat')
 
 
 

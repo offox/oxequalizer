@@ -53,7 +53,8 @@ ApplicationWindow {
         onAccepted: {
             console.log("You chose: " + fileDialog.fileUrls)
             audioUrl = fileDialog.fileUrl
-            controller.setAudioUrl(audioUrl)
+            //controller.setAudioUrl(audioUrl)
+            controller.loadFile(audioUrl)
         }
         onRejected: {
             console.log("Canceled")
@@ -77,22 +78,34 @@ ApplicationWindow {
             width: 280
             height: 200
 
-            value31: 10
-            value62: 12
-            value125: 3
-            value250: 12
-            value500: 18
-            value1k: 6
-            value2k: 15
-            value4k: 2
-            value8k: 8
-            value16k: 13
+            value31: oxVuIn.value31
+            value62: oxVuIn.value62
+            value125: oxVuIn.value125
+            value250: oxVuIn.value250
+            value500: oxVuIn.value500
+            value1k: oxVuIn.value1k
+            value2k: oxVuIn.value2k
+            value4k: oxVuIn.value4k
+            value8k: oxVuIn.value8k
+            value16k: oxVuIn.value16k
         }
 
         OxVu {
             id: vuOut
+
             width: 280
             height: 200
+
+            value31: oxVuOut.value31
+            value62: oxVuOut.value62
+            value125: oxVuOut.value125
+            value250: oxVuOut.value250
+            value500: oxVuOut.value500
+            value1k: oxVuOut.value1k
+            value2k: oxVuOut.value2k
+            value4k: oxVuOut.value4k
+            value8k: oxVuOut.value8k
+            value16k: oxVuOut.value16k
         }
 
         Item {
@@ -136,7 +149,7 @@ ApplicationWindow {
             }
         }
 
-        OxMixer {
+        OxEqualizer {
             id: mixer
 
             width: 280

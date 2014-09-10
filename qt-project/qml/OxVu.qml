@@ -1,16 +1,16 @@
 import QtQuick 2.0
 
 Rectangle {
-    property int value31
-    property int value62
-    property int value125
-    property int value250
-    property int value500
-    property int value1k
-    property int value2k
-    property int value4k
-    property int value8k
-    property int value16k
+    property double value31
+    property double value62
+    property double value125
+    property double value250
+    property double value500
+    property double value1k
+    property double value2k
+    property double value4k
+    property double value8k
+    property double value16k
 
     color: "black"
 

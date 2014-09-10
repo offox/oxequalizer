@@ -1,0 +1,60 @@
+Autor: Oswaldo Fratini Filho	
+Data: 04/09/2014
+Disciplina: Processamento Digital de Sinais
+Instituição: Universidade Federal do ABC
+Código da disciplina: INF201
+Professor: Murilo Bellezoni Loiola
+Título: Equalizador 10 bandas de frequência de áudio mono
+
+Resumo
+
+O objetivo é detalhar o projeto e implementação de um equalizador de bandas de frequência de áudio usa de diversos conceitos de processamento digital de sinais. A partir de um filtro RLC de sinais em tempo contínuo será demonstrado como criar o filtro equivalente a ser aplicado a sinais de tempo discreto. O objetivo é demonstrar as novas caracteriscas audivéis do som, assim como os efeitos visuais da aplicação de tal equalizador por meio de um LED bargraph / VU Meter. A implementação foca no desenvolvimento dos filtros e da FFT usada para visualização do espectro de frequência.
+
+Introdução
+
+O diagrama de blocos de um equalizador é dada pela figura abaixo:
+
+Para a implementação do equalizador é preciso projetar 10 filtros passa banda e o diagrama do filtro analógico a ser utilizado é mostrado na figura ...
+
+O filtro passa banda de tempo contínuo pode ser descrito pela fórmula abaixo:
+
+Por meio de tal função é possível encontrar a função de transferência no plano s(H(s)) mostrada abaixo:
+
+Para encotrarmos a função de transferência no plano z(H(z)) a partir da funcão de transferência no plano s(H(s)), utilizamos a transformada bilinear. A transformação bilinear do plano s para o plano z é dada pela fórmula abaixo:
+
+
+
+
+A partir desse filtro om
+
+
+Introdução teórica
+
+Ambiente de desenvolvimento
+
+- Desenvolvido em C++
+- Framework Qt 5.2
+- QtCreator
+- Linux
+
+Referências bibliográficas:
+
+- Implementing a 10-Band Stereo Equalizer on the DSP56311 EVM Board
+  Freescale Semiconductor AN2110
+  James M. Montgomery
+  
+- B. P. (Bhagwandas Pannalal) Lathi - Sinais e Sistemas Lineares
+  2.ed, Bookman, Porto Alegre, 2007
+  
+-
+	
+	
+
+
+
+
+
+
+
+
+

@@ -21,60 +21,90 @@ Item {
             id: slider31
 
             value: value31
+            onValueChanged: {
+                oxEqualizer.setGain31(value)
+            }
         }
 
         OxSlider {
             id: slider62
 
             value: value62
+            onValueChanged: {
+                oxEqualizer.setGain62(value)
+            }
         }
 
         OxSlider {
             id: slider125
 
             value: value125
+            onValueChanged: {
+                oxEqualizer.setGain125(value)
+            }
         }
 
         OxSlider {
             id: slider250
 
             value: value250
+            onValueChanged: {
+                oxEqualizer.setGain250(value)
+            }
         }
 
         OxSlider {
             id: slider500
 
             value: value500
+            onValueChanged: {
+                oxEqualizer.setGain500(value)
+            }
         }
 
         OxSlider {
             id: slider1k
 
             value: value1k
+            onValueChanged: {
+                oxEqualizer.setGain1k(value)
+            }
         }
 
         OxSlider {
             id: slider2k
 
             value: value2k
+            onValueChanged: {
+                oxEqualizer.setGain2k(value)
+            }
         }
 
         OxSlider {
             id: slider4k
 
             value: value4k
+            onValueChanged: {
+                oxEqualizer.setGain4k(value)
+            }
         }
 
         OxSlider {
             id: slider8k
 
             value: value8k
+            onValueChanged: {
+                oxEqualizer.setGain8k(value)
+            }
         }
 
         OxSlider {
             id: slider16k
 
             value: value16k
+            onValueChanged: {
+                oxEqualizer.setGain16k(value)
+            }
         }
     }
 }

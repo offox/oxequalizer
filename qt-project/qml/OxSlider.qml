@@ -7,6 +7,10 @@ Slider {
     visible: true
     orientation: Qt.Vertical
 
+    maximumValue: 1
+    minimumValue: 0
+    value: 0
+
     style: SliderStyle {
          groove: Rectangle {
              implicitWidth: 180

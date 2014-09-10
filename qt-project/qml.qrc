@@ -1,14 +1,14 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>images/slider-handle.jpg</file>
-        <file>OxSlider.qml</file>
-        <file>images/slider-panel.jpg</file>
-        <file>OxBarGraph.qml</file>
-        <file>OxVu.qml</file>
-        <file>OxMixer.qml</file>
-        <file>images/play.png</file>
-        <file>images/stop.png</file>
-        <file>images/pause.png</file>
+        <file>qml/main.qml</file>
+        <file>qml/images/slider-handle.jpg</file>
+        <file>qml/OxSlider.qml</file>
+        <file>qml/images/slider-panel.jpg</file>
+        <file>qml/OxBarGraph.qml</file>
+        <file>qml/OxVu.qml</file>
+        <file>qml/OxEqualizer.qml</file>
+        <file>qml/images/play.png</file>
+        <file>qml/images/stop.png</file>
+        <file>qml/images/pause.png</file>
     </qresource>
 </RCC>
